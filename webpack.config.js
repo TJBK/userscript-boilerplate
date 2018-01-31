@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const meta = require('fs').readFileSync('./meta.js', 'utf-8');
+const meta = require('./meta');
 const name = require('./package.json').name;
 
 const ZipPlugin = require('zip-webpack-plugin');

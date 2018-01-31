@@ -1,9 +1,9 @@
-// ==UserScript==
-// @name            Userscript Boilerplate
+module.exports = `// ==UserScript==
+// @name            ${require('./package.json').name}
 // @namespace       https://example.com/userscript-boilerplate
-// @version         1.0.0
-// @author          Waqas Ibrahim
-// @description     A userscript boilerplate with ES6 support using Babel
+// @version         ${require('./package.json').version}
+// @author          ${require('./package.json').author}
+// @description     ${require('./package.json').description}
 // @homepage        https://example.com/
 // @icon            https://example.com/icon.png
 // @match           *://*.example.com/*
@@ -18,4 +18,4 @@
 // @grant           GM_setValue
 // @grant           GM_getResourceURL
 // @grant           GM_xmlhttpRequest
-// ==/UserScript==
+// ==/UserScript==`
